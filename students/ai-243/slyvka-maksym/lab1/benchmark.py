@@ -4,7 +4,7 @@ import csv
 from providers import make_client
 from utils.lab_logger import custom_logger
 
-logger = custom_logger('lab1', overwrite=True)
+logger = custom_logger('lab1')
 
 def measure(client, model, prompt):
     """Один вимір: повертає TTFT, загальний час і довжину відповіді."""
@@ -42,7 +42,7 @@ PROMPTS = {
 }
 
 rows = []
-for provider in ["local", "cloud"]:
+for provider in ["local", "local2", "cloud"]:
     client, model = make_client(provider)
     logger.info(f"Provider: {provider} | Model: {model}")
     measure(client, model, "розігрів")  # прогрів, не рахуємо

@@ -2,7 +2,7 @@ from providers import make_client
 from utils.lab_logger import custom_logger
 import json
 
-logger = custom_logger('lab1', overwrite=True)
+logger = custom_logger('lab1')
 
 TEXT = """12 квітня 1961 року Юрій Гагарін здійснив перший в історії людства космічний політ на кораблі «Восток-1». Ракета-носій стартувала з космодрому Байконур о 09:07 за місцевим часом. Політ тривав усього 108 хвилин, за які космічний корабель здійснив 1 повний оберт навколо Землі. Максимальна висота орбіти становила 327 кілометрів, а мінімальна — 181 кілометр. Після виконання завдання космонавт катапультувався на висоті 7 кілометрів і успішно спустився на парашуті."""
 
@@ -17,7 +17,7 @@ TASKS = {
 
 results = {}
 
-for provider in ["local", "cloud"]:
+for provider in ["local", "local2", "cloud"]:
     client, model = make_client(provider)
     logger.info(f"Provider: {provider} | Model: {model}")
     results[model] = {}
