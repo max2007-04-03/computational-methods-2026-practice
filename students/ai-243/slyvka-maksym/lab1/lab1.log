@@ -1,0 +1,11 @@
+2026-09-15 09:20:06 - INFO - ===== LOCAL (llama3.2:3b) =====
+2026-09-15 09:20:06 - INFO - Функція — це математська операція, що зводить до визначення конкретного результату для певного входу, наприклад, квадрат числа. Метод — це серія дій, що допомагають досягти певного результату, наприклад, метод калькулятора для розрахунків.
+2026-09-15 09:20:06 - INFO - Час: 3.90 с
+2026-09-15 09:20:06 - INFO - CompletionUsage(completion_tokens=67, prompt_tokens=43, total_tokens=110, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cache_write_tokens=None, cached_tokens=42, image_tokens=None, text_tokens=None))
+2026-09-15 09:20:06 - INFO - 
+2026-09-15 09:20:06 - INFO - ===== CLOUD (openai/gpt-oss-20b) =====
+2026-09-15 09:20:06 - INFO - Функція – це самостійна процедура, яка приймає аргументи і повертає значення; вона не належить до жодного об’єкта.  
+Метод – це функція, що **залежить від об’єкта (класу)** і викликається як `об’єкт.метод()`. Тобто метод – це функція, що «застосовується» до конкретного об’єкта і може звертатися до його внутрішніх даних (`this`/`self`).
+2026-09-15 09:20:06 - INFO - Час: 0.58 с
+2026-09-15 09:20:06 - INFO - CompletionUsage(completion_tokens=167, prompt_tokens=89, total_tokens=256, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=None, reasoning_tokens=42, rejected_prediction_tokens=None, text_tokens=None), prompt_tokens_details=None, queue_time=0.195648657, prompt_time=0.005059025, completion_time=0.235238841, total_time=0.240297866)
+2026-09-15 09:20:06 - INFO - 
